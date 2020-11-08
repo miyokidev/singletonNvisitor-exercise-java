@@ -1,0 +1,43 @@
+/*
+ * PROJET: Dans ce projet nous allons voir 2 types de design patterns (Singleton et Visitor) puis les classes génériques.
+ * 
+ * Design Patterns:
+ * 
+ * Vous l'avez donc compris il existe plusieurs types de design pattern mais qu'est-ce qu'un design pattern?
+ * 
+ * Le design pattern ou patron de conception en français (il est mieux de connaître les termes anglais), est une solution générale et réutilisable à un problème
+ * courant dans un contexte donné de la conception logicielle. Ce n'est pas une conception finie qui peut être transformée directement en code source ou machine.
+ * Il s'agit plutôt d'une description ou d'un modlèle sur la façon de résoudre un problème qui peut être utilisé dans de nombreuses situations différentes.
+ * Les design patterns représentent les meilleures pratiques utilisées par les développeurs de logiciels orientés objet experimentés. Les design patterns sont des
+ * solutions aux problèmes généraux auxquels les développeurs de logiciels ont été confrontés lors du développement de logiciels. Ces solutions ont été obtenues par
+ * différents essais et erreurs par de nombreux développeurs de logiciels sur une période assez longue.
+ * 
+ * Il existe 23 design patterns qui peuvent être classés en trois catégories: Creational, Structural et Behavioral patterns.
+ * 
+ * Creational Patterns (EXEMPLE: SINGLETON): Ces design patterns offrent un moyen de créer des objets tout en masquant la logique de création, plutôt que d'instancier
+ *  des objets directement à l'aide d'un nouvel opérateur. Cela donne au programme plus de flexibilité pour décider quels objets doivent être créés pour un cas 
+ *  d'utilisation donné.
+ * 
+ * Structural Patterns: Ces design pattenrs concernent la composition des classes et des objets. Le concept d'héritage permet de composer des interfaces et de définir
+ * des manières de composer des objets pour obtenir de nouvelles fonctionnalités.
+ * 
+ * Behavioral Paterns (EXEMPLE: VISITOR): Ces design patterns concernent spécifiquement la communication entre les objets.
+ * 
+ * Singleton: Vous permet de vous assurer qu'une classe n'a qu'une seule instance, tout en fournissant un point d'accès global à cette instance.
+ * 
+ * Visitor: Permmet de séparer les algorithmes des objets sur lesquels ils opèrent.
+ * 
+ * sources sur les design patterns:
+ * https://refactoring.guru/design-patterns/csharp
+ * https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm
+ * 
+ * 
+ * 
+ */
+public class Program {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
