@@ -1,5 +1,5 @@
 /*
- * PROJET: Dans ce projet nous allons voir 2 types de design patterns (Singleton et Visitor) puis les classes génériques.
+ * PROJET: Dans ce projet nous allons voir 2 types de design patterns (Singleton et Visitor).
  * 
  * Design Patterns:
  * 
@@ -23,6 +23,8 @@
  * 
  * Behavioral Paterns (EXEMPLE: VISITOR): Ces design patterns concernent spécifiquement la communication entre les objets.
  * 
+ * Les design patterns que nous allons voir:
+ * 
  * Singleton: Vous permet de vous assurer qu'une classe n'a qu'une seule instance, tout en fournissant un point d'accès global à cette instance.
  * 
  * Visitor: Permmet de séparer les algorithmes des objets sur lesquels ils opèrent.
@@ -32,11 +34,31 @@
  * https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm
  * 
  * 
+ * Class Generic (non vu finalement dans cet exercice):
+ * Une classe générique est une classe qui peut être réutilisée pour des objets de différents types.
+ * 
+ * sources:
+ * http://blog.paumard.org/cours/java-api/chap02-generiques-premier-exemple.html
+ * 
  * 
  */
 public class Program {
 
 	public static void main(String[] args) {
+		/*
+		 * Pour cette exercice on va prendre en exemple un magasin d'éléctronique où l'on prend un chariot (notre liste d'éléments) et on voudra calculer le prix total des
+		 * éléments qu'on a dans le chariot à l'aide d'une classe qui calculera (une classe utilisant le design pattern singleton) on aura besoin de l'aide du design
+		 * pattern visitor pour visiter chaque objet.
+		 */
+		
+		ShoppingCartClient client = new ShoppingCartClient();
+		
+		client.addItem(new Mouse("121",101));
+		client.addItem(new Mouse("212", 60));
+		client.addItem(new Keyboard("111",120));
+		client.addItem(new Keyboard("233",200));
+		
+		client.printTotal();
 		
 	}
 
