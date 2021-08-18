@@ -5,29 +5,29 @@
  * 
  * Vous l'avez donc compris il existe plusieurs types de design pattern mais qu'est-ce qu'un design pattern?
  * 
- * Le design pattern ou patron de conception en français (il est mieux de connaître les termes anglais), est une solution générale et réutilisable à un problème
- * courant dans un contexte donné de la conception logicielle. Ce n'est pas une conception finie qui peut être transformée directement en code source ou machine.
- * Il s'agit plutôt d'une description ou d'un modlèle sur la façon de résoudre un problème qui peut être utilisé dans de nombreuses situations différentes.
- * Les design patterns représentent les meilleures pratiques utilisées par les développeurs de logiciels orientés objet experimentés. Ils sont des
- * solutions aux problèmes généraux auxquels les développeurs de logiciels ont été confrontés lors du développement de logiciels. Ces solutions ont été obtenues par
- * différents essais et erreurs par de nombreux développeurs de logiciels sur une période assez longue.
+ * Le design pattern ou patron de conception en franÃ§ais (il est mieux de connaÃ®tre les termes anglais), est une solution gÃ©nÃ©rale et rÃ©utilisable Ã  un problÃ¨me
+ * courant dans un contexte donnÃ© de la conception logicielle. Ce n'est pas une conception finie qui peut Ãªtre transformÃ©e directement en code source ou machine.
+ * Il s'agit plutÃ´t d'une description ou d'un modlÃ¨le sur la faÃ§on de rÃ©soudre un problÃ¨me qui peut Ãªtre utilisÃ© dans de nombreuses situations diffÃ©rentes.
+ * Les design patterns reprÃ©sentent les meilleures pratiques utilisÃ©es par les dÃ©veloppeurs de logiciels orientÃ©s objet experimentÃ©s. Ils sont des
+ * solutions aux problÃ¨mes gÃ©nÃ©raux auxquels les dÃ©veloppeurs de logiciels ont Ã©tÃ© confrontÃ©s lors du dÃ©veloppement de logiciels. Ces solutions ont Ã©tÃ© obtenues par
+ * diffÃ©rents essais et erreurs par de nombreux dÃ©veloppeurs de logiciels sur une pÃ©riode assez longue.
  * 
- * Il existe 23 design patterns qui peuvent être classés en trois catégories: Creational, Structural et Behavioral patterns.
+ * Il existe 23 design patterns qui peuvent Ãªtre classÃ©s en trois catÃ©gories: Creational, Structural et Behavioral patterns.
  * 
- * Creational Patterns (EXEMPLE: SINGLETON): Ces design patterns offrent un moyen de créer des objets tout en masquant la logique de création, plutôt que d'instancier
- *  des objets directement à l'aide d'un nouvel opérateur. Cela donne au programme plus de flexibilité pour décider quels objets doivent être créés pour un cas 
- *  d'utilisation donné.
+ * Creational Patterns (EXEMPLE: SINGLETON): Ces design patterns offrent un moyen de crÃ©er des objets tout en masquant la logique de crÃ©ation, plutÃ´t que d'instancier
+ *  des objets directement Ã  l'aide d'un nouvel opÃ©rateur. Cela donne au programme plus de flexibilitÃ© pour dÃ©cider quels objets doivent Ãªtre crÃ©Ã©s pour un cas 
+ *  d'utilisation donnÃ©.
  * 
- * Structural Patterns: Ces design patterns concernent la composition des classes et des objets. Le concept d'héritage permet de composer des interfaces et de définir
- * des manières de composer des objets pour obtenir de nouvelles fonctionnalités.
+ * Structural Patterns: Ces design patterns concernent la composition des classes et des objets. Le concept d'hÃ©ritage permet de composer des interfaces et de dÃ©finir
+ * des maniÃ¨res de composer des objets pour obtenir de nouvelles fonctionnalitÃ©s.
  * 
- * Behavioral Paterns (EXEMPLE: VISITOR): Ces design patterns concernent spécifiquement la communication entre les objets.
+ * Behavioral Paterns (EXEMPLE: VISITOR): Ces design patterns concernent spÃ©cifiquement la communication entre les objets.
  * 
  * Les design patterns que nous allons voir:
  * 
- * Singleton: Vous permet de vous assurer qu'une classe n'a qu'une seule instance, tout en fournissant un point d'accès global à cette instance.
+ * Singleton: Vous permet de vous assurer qu'une classe n'a qu'une seule instance, tout en fournissant un point d'accÃ¨s global Ã  cette instance.
  * 
- * Visitor: Permmet de séparer les algorithmes des objets sur lesquels ils opèrent.
+ * Visitor: Permet de sÃ©parer les algorithmes des objets sur lesquels ils opÃ¨rent.
  * 
  * sources sur les design patterns:
  * https://refactoring.guru/design-patterns/csharp
@@ -35,7 +35,7 @@
  * 
  * 
  * Class Generic (non vu finalement dans cet exercice):
- * Une classe générique est une classe qui peut être réutilisée pour des objets de différents types.
+ * Une classe gÃ©nÃ©rique est une classe qui peut Ãªtre rÃ©utilisÃ©e pour des objets de diffÃ©rents types.
  * 
  * sources:
  * http://blog.paumard.org/cours/java-api/chap02-generiques-premier-exemple.html
@@ -46,15 +46,15 @@ public class Program {
 
 	public static void main(String[] args) {
 		/*
-		 * Pour cette exercice on va prendre en exemple un magasin d'éléctronique où l'on prend un chariot (notre liste d'éléments) et on voudra calculer le prix total 
-		 * des éléments qu'on a dans le chariot à l'aide d'une classe qui calculera (une classe utilisant le design pattern singleton) on aura besoin de l'aide du design
+		 * Pour cette exercice on va prendre en exemple un magasin d'Ã©lÃ©ctronique oÃ¹ l'on prend un chariot (notre liste d'Ã©lÃ©ments) et on voudra calculer le prix total 
+		 * des Ã©lÃ©ments qu'on a dans le chariot Ã  l'aide d'une classe qui calculera (une classe utilisant le design pattern singleton) on aura besoin de l'aide du design
 		 * pattern visitor pour visiter chaque objet.
 		 */
 		
-		// On crée un paniers
+		// On crÃ©e un paniers
 		ShoppingCartClient client = new ShoppingCartClient();
 		
-		// On y ajoute des éléments
+		// On y ajoute des Ã©lÃ©ments
 		client.addItem(new Mouse("121",101));
 		client.addItem(new Mouse("212", 60));
 		client.addItem(new Keyboard("111",120));
